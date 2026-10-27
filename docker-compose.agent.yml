@@ -1,0 +1,8 @@
+services:
+  erpnext-agent:
+    build:
+      context: .
+    container_name: erpnext-agent
+    env_file:
+      - .env.agent
+    restart: unless-stopped
